@@ -9,7 +9,7 @@ class Program
 
         while (end)
         {
-            Console.WriteLine("1.flipcoin/n2. , 2.leap_year/n3. end the programme ");
+            Console.WriteLine("1.flipcoin/n2. , 2.leap_year/n3. , 3.PowerofTwo end the programme/n4. ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -21,6 +21,14 @@ class Program
                     Leap_Year LEAPYEAR = new Leap_Year();
                     LEAPYEAR.LEAPYEAR();
                     break;
+                case 3:
+                    poweroftwo Power = new poweroftwo();
+                    Power.Power();
+                    break;
+
+
+
+
 
             }
         }
