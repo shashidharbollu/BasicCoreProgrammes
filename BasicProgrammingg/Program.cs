@@ -9,7 +9,7 @@ class Program
 
         while (end)
         {
-            Console.WriteLine("1.flipcoin/n2. , 2.leap_year/n3. , 3.PowerofTwo/n4. , 4.harmonic_number/n5. end the programme/n4. ");
+            Console.WriteLine("1.flipcoin\n 2.leap_year\n , 3.PowerofTwo\n 4.harmonic_number\n 5.quotientandreminder\n end the programme/n4. ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -29,11 +29,13 @@ class Program
                     HarmonicNumber HarmonicNumber = new HarmonicNumber();
                     HarmonicNumber.harmonicnumbers();
                     break;
-
-
-
-
-
+                case 5:
+                    quotientreminder quotientreminder = new quotientreminder();
+                    quotientreminder.quotientreminderr();
+                    break;
+                default:
+                    Console.WriteLine("choose a proper number to execute");
+                    break;
             }
         }
     }
