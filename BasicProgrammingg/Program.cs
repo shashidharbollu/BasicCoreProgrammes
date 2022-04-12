@@ -9,7 +9,7 @@ class Program
 
         while (end)
         {
-            Console.WriteLine("1.flipcoin/n2. , 2.leap_year/n3. , 3.PowerofTwo end the programme/n4. ");
+            Console.WriteLine("1.flipcoin/n2. , 2.leap_year/n3. , 3.PowerofTwo/n4. , 4.harmonic_number/n5. end the programme/n4. ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -24,6 +24,10 @@ class Program
                 case 3:
                     poweroftwo Power = new poweroftwo();
                     Power.Power();
+                    break;
+                case 4:
+                    HarmonicNumber HarmonicNumber = new HarmonicNumber();
+                    HarmonicNumber.harmonicnumbers();
                     break;
 
 
