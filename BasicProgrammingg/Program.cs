@@ -9,7 +9,7 @@ class Program
 
         while (end)
         {
-            Console.WriteLine("1.flipcoin\n 2.leap_year\n , 3.PowerofTwo\n 4.harmonic_number\n 5.quotientandreminder\n 6.swapnumber\n 7.evenorodd\n end the programme/n4. ");
+            Console.WriteLine("1.flipcoin\n 2.leap_year\n , 3.PowerofTwo\n 4.harmonic_number\n 5.quotientandreminder\n 6.swapnumber\n 7.evenorodd\n 8.vowelconsonant\n end the programme/n4. ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -40,6 +40,10 @@ class Program
                 case 7:
                     EvenOdd evenOdd = new EvenOdd();
                     evenOdd.EvenOddNumber();
+                    break;
+                case 8:
+                    VowelConsonant vowelConsonant = new VowelConsonant();
+                    vowelConsonant.Vowel_Consonant();
                     break;
 
                 default:
